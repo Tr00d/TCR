@@ -23,6 +23,7 @@
 set -u
 
 LANGUAGE_BASE_DIR="$(cd "$(dirname -- "$0")" && pwd)"
+echo $LANGUAGE_BASE_DIR
 WRAPPER_PATH="${LANGUAGE_BASE_DIR}/$(basename "$0")"
 COMMAND_ARGS=$*
 SCRIPT_DIR="$LANGUAGE_BASE_DIR/tcr/tcr_shell"
