@@ -25,7 +25,7 @@ set -u
 LANGUAGE_BASE_DIR="$(cd "$(dirname -- "$0")" && pwd)"
 WRAPPER_PATH="${LANGUAGE_BASE_DIR}/$(basename "$0")"
 COMMAND_ARGS=$*
-SCRIPT_DIR="$(dirname "${LANGUAGE_BASE_DIR}")/tcr/tcr_shell"
+SCRIPT_DIR="$LANGUAGE_BASE_DIR/tcr/tcr_shell"
 
 # ------------------------------------------------------------------------------
 # For POSIX-compliant list manipulation (Cf. https://github.com/Ventto/libshlist)
@@ -97,7 +97,7 @@ tcr_check_inotifywait_availability() {
 # ------------------------------------------------------------------------------
 
 tcr_detect_kata_language() {
-  LANGUAGE=${LANGUAGE_BASE_DIR##*/}
+  LANGUAGE="csharp"
   LANGUAGE_VARIABLES_FILE="${SCRIPT_DIR}/languages/${LANGUAGE}"
 
   if [ -f "${LANGUAGE_VARIABLES_FILE}" ]; then

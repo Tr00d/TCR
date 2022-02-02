@@ -23,4 +23,4 @@
 base_dir="$(cd "$(dirname -- "$0")" && pwd)"
 engine="tcr_shell"
 # shellcheck disable=SC1090
-. "${base_dir}/../tcr/${engine}/${engine}.sh"
+. "${base_dir}/tcr/${engine}/${engine}.sh"
