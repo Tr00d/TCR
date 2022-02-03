@@ -20,8 +20,5 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-TOOLCHAIN="mstest"
-SUPPORTED_TOOLCHAINS="$(list "mstest" "nunit" "xunit")"
-WORK_DIR="${LANGUAGE_BASE_DIR}"
-SRC_DIRS="$(list "${LANGUAGE_BASE_DIR}/src")"
-TEST_DIRS="$(list "${LANGUAGE_BASE_DIR}/tests")"
+TCR_BUILD_CMD="dotnet build"
+TCR_TEST_CMD="dotnet test --filter \"TestCategory!=InProgress\""
