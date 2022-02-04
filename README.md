@@ -39,6 +39,12 @@ Here's the filter used on the test command (the name of the filter may vary depe
 It also means it's up to you to change it if you already have different guidelines, or if you want to expand the filter. All you have to do is updating the [toolchain file](tcr/tcr_shell/toolchains) for a specific test framework.
 
 ## Integration
-This is the easy part: just copy at the same level than src|tests folders both [tcr folder](tcr) and [watcher script](tcrw).
+This is the easy part!
+
+Please keep in mind you have to follow a strict folder structure. 
+A solution file, containing links to projects, is required at the root as no specific target is defined in the toolchain.
+
+
+Knowing that, just copy both [tcr folder](tcr) and [watcher script](tcrw) at the root of you solution, at the same level than the solution file and both src|tests folders.
 
 This is it. Then run the script and have fun!
