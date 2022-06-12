@@ -1,4 +1,6 @@
 # TCR (Test && Commit || Revert) utility for C#
+**This tool is not maintained anymore. Murex released a Go version that also handle C#. I stronly recommend using the new one, it's also easier to setup.**
+
 Before we start, all the credits goes to [Murex](https://github.com/murex). 
 This utility is based on [their implementation](https://github.com/murex/Kata-BowlingGame).
 I'd like to thank them for their incredible work.
